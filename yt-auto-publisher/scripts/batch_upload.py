@@ -46,9 +46,9 @@ def parse_args():
     group.add_argument("--folder", help="包含影片檔案的資料夾路徑")
     group.add_argument("--csv", help="CSV 控制檔路徑")
 
-    parser.add_argument("--privacy", default="private",
+    parser.add_argument("--privacy", default="public",
                         choices=["public", "unlisted", "private"],
-                        help="預設隱私設定（預設 private）")
+                        help="預設隱私設定（預設 public）")
     parser.add_argument("--category", default="22", help="預設類別 ID（預設 22）")
     parser.add_argument("--tags", default="", help="預設標籤（逗號分隔）")
     parser.add_argument("--description", default="", help="預設描述")

@@ -13,7 +13,7 @@ YouTube 影片上傳工具 — 透過 YouTube Data API v3 上傳
   --description 影片描述
   --tags        標籤，逗號分隔
   --category    類別 ID（預設 22 = People & Blogs）
-  --privacy     public / unlisted / private（預設 private）
+  --privacy     public / unlisted / private（預設 public）
   --playlist    上傳後加入指定播放清單名稱
   --thumbnail   自訂縮圖圖片路徑
 """
@@ -72,9 +72,9 @@ def parse_args():
     parser.add_argument("--tags", default="", help="標籤，逗號分隔")
     parser.add_argument("--category", default="22", help="類別 ID 或名稱（預設 22）")
     parser.add_argument(
-        "--privacy", default="private",
+        "--privacy", default="public",
         choices=["public", "unlisted", "private"],
-        help="隱私設定（預設 private）",
+        help="隱私設定（預設 public）",
     )
     parser.add_argument("--playlist", default="", help="上傳後加入指定播放清單名稱")
     parser.add_argument("--thumbnail", default="", help="自訂縮圖圖片路徑")

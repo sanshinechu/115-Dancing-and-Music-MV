@@ -149,7 +149,7 @@ python "C:/Users/user/.claude/skills/yt-auto-publisher/scripts/upload_video.py" 
 | `--description` | 否 | 影片描述（預設空白） |
 | `--tags` | 否 | 標籤，逗號分隔 |
 | `--category` | 否 | 類別 ID（預設 22=People & Blogs） |
-| `--privacy` | 否 | public / unlisted / private（預設 private） |
+| `--privacy` | 否 | public / unlisted / private（**預設 public**，不帶就會直接公開） |
 | `--playlist` | 否 | 上傳後加入指定播放清單名稱 |
 | `--thumbnail` | 否 | 自訂縮圖圖片路徑 |
 
